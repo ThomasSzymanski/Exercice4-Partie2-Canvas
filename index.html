@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>Exercice 4 - Canvas</title>
+	</head>
+	<body>
+		<canvas id="mon_canvas" width="2000" height="500"> 
+  			Texte alternatif pour les navigateurs ne supportant pas Canvas.
+		</canvas>
+		<script type="text/javascript">
+  			var c = document.getElementById("mon_canvas");
+ 			var ctx = c.getContext("2d");
+
+ 			//lettres
+ 			ctx.beginPath();
+ 			ctx.moveTo(200,100);
+ 			ctx.lineTo(100,100);
+ 			ctx.lineTo(100,400);
+ 			ctx.lineTo(200,400);
+ 			ctx.moveTo(100,250);
+ 			ctx.lineTo(200,250);
+ 			ctx.lineWidth = 8;
+ 			ctx.strokeStyle = "black";
+ 			ctx.stroke();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(450,400);
+ 			ctx.lineTo(450,100);
+ 			ctx.lineTo(650,400);
+ 			ctx.lineTo(650,100);
+ 			ctx.lineWidth = 8;
+ 			ctx.strokeStyle = "black";
+ 			ctx.stroke();
+
+ 			//deux
+ 			ctx.beginPath();
+ 			ctx.moveTo(200,100);
+ 			ctx.quadraticCurveTo(750,-190,150,470);
+ 			ctx.lineWidth = 15;
+ 			ctx.lineCap = "round";
+ 			ctx.strokeStyle = "#ea4e1d";
+ 			ctx.stroke();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(150,470);
+ 			ctx.lineTo(350,440);
+ 			ctx.lineWidth = 15;
+ 			ctx.lineCap = "round";
+ 			ctx.strokeStyle = "#ea4e1d";
+ 			ctx.stroke();
+
+ 			//hexagones
+ 			ctx.beginPath();
+ 			ctx.moveTo(722,100);
+ 			ctx.lineTo(707,115);
+ 			ctx.lineTo(707,130);
+ 			ctx.lineTo(722,145);
+ 			ctx.lineTo(737,130);
+ 			ctx.lineTo(737,115);
+ 			ctx.lineWidth = 1;
+ 			ctx.fillStyle = "#ebebeb";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(705,140);
+ 			ctx.lineTo(690,155);
+ 			ctx.lineTo(690,170);
+ 			ctx.lineTo(705,185);
+ 			ctx.lineTo(720,170);
+ 			ctx.lineTo(720,155);
+ 			ctx.fillStyle = "#dbdadb";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(740,140);
+ 			ctx.lineTo(725,155);
+ 			ctx.lineTo(725,170);
+ 			ctx.lineTo(740,185);
+ 			ctx.lineTo(755,170);
+ 			ctx.lineTo(755,155);
+ 			ctx.fillStyle = "#595656";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(722,180);
+ 			ctx.lineTo(707,195);
+ 			ctx.lineTo(707,210);
+ 			ctx.lineTo(722,225);
+ 			ctx.lineTo(737,210);
+ 			ctx.lineTo(737,195);
+ 			ctx.fillStyle = "#ea4e1d";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(705,220);
+ 			ctx.lineTo(690,235);
+ 			ctx.lineTo(690,250);
+ 			ctx.lineTo(705,265);
+ 			ctx.lineTo(720,250);
+ 			ctx.lineTo(720,235);
+ 			ctx.fillStyle = "#878787";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(740,220);
+ 			ctx.lineTo(725,235);
+ 			ctx.lineTo(725,250);
+ 			ctx.lineTo(740,265);
+ 			ctx.lineTo(755,250);
+ 			ctx.lineTo(755,235);
+ 			ctx.fillStyle = "#ebebeb";
+ 			ctx.fill();
+
+ 			//petits hexagones
+ 			ctx.beginPath();
+ 			ctx.moveTo(765,160);
+ 			ctx.lineTo(760,165);
+ 			ctx.lineTo(760,170);
+ 			ctx.lineTo(765,175);
+ 			ctx.lineTo(770,170);
+ 			ctx.lineTo(770,165);
+ 			ctx.fillStyle = "#ebebeb";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(775,170);
+ 			ctx.lineTo(770,175);
+ 			ctx.lineTo(770,180);
+ 			ctx.lineTo(775,185);
+ 			ctx.lineTo(780,180);
+ 			ctx.lineTo(780,175);
+ 			ctx.fillStyle = "#878787";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(790,160);
+ 			ctx.lineTo(785,165);
+ 			ctx.lineTo(785,170);
+ 			ctx.lineTo(790,175);
+ 			ctx.lineTo(795,170);
+ 			ctx.lineTo(795,165);
+ 			ctx.fillStyle = "#ea4e1d";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.fillStyle = "#878787";
+ 			ctx.font = "30pt Verdana";
+ 			ctx.fillText('École du Numérique', 445, 450);
+ 			ctx.fillText('du Noyonnais', 445, 490);
+ 			ctx.fill();
+ 		</script>
+	</body>
+</html>
